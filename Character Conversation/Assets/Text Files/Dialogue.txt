@@ -22,16 +22,132 @@ First Choice
 0](1)You’re exactly like them. (2)Athens will die if you fight. (3)Don’t say that about the other gods.
 
 1:Choice1
-0]test1
+0]Athena, you’re exactly like them.
+0]You’re all in denial, all refusing to accept the end.
+0]I’ve done this many times, and you all say the same things.
+0]You’re not better than them because you’re willing to go to war in your refusal to accept reality.
+0]You have to let go.
+0]And it’s not easy, I know it’s not easy, I wouldn’t be here if it was easy, but you just have to.
+0]I’m afraid for once in your life you don’t have a choice.
+1]Of course I have a choice!
+1]All us gods did.
+1]But don’t you dare compare me to them when they chose to do nothing.
+1]When instead of fighting back they just sat there and accepted it.
+
+Choice1
+1]When I am the only one in the entire pantheon who’s chosen to fight.
+0](11)What about the gods that helped you? (2)You’re not choosing to fight, Athena. You’re sending Athens to its grave. (4)I give up.
+
+11:END
+0]You’re far from the only one that chose to fight, Athena.
+0]Hermes chose to fight by sending you information.
+0]Hephaestus chose to fight by sending you weapons.
+0]And Poseidon has regretted not fighting every day for months.
+1]And?!
+1]What of it?
+1]They all gave up in the end!
+1]Now I am the only one left standing, the only one between the Romans and this city.
+1]Their promises mean nothing to my people, they mean nothing to the Romans, and they mean nothing to me.
+0]You still don’t get it, Athena!
+0]They didn’t give up, they accepted their fate.
+0]You know they’re still alive, right?
+0]That even though the Romans took them over, they still live in their people?
+1]Don’t give me that shit, child.
+1]If they are not dead now, they will be soon.
+1]How can a dead god serve their people?
+0]On the course you’re on, there won’t be people to serve.
+0]Do you even care about your people?
+0]Do you even care that you’re sending them to die?
+1]Of course I care!
+1]How dare you suggest otherwise!
+1]They are my children, and I’d do anything to protect them.
+0]Then why is it so hard for you to let them go?
+1]Because they’re mine!
+1]How can I be sure the Romans won’t torture and enslave them?
+1]How can I be sure they’ll be safe without me?
+0]I can’t guarantee anything.
+0]No one can.
+0]But have faith in your people, Athena.
+0]You’ve taught them well.
+1]...
+1]...
+1]...
+1]Leave me. I need time to think.
 
 2:Choice2
-0]test2
+0]You don’t understand! It won’t be a fight, Athena, it will be a slaughter.
+0]You have no idea how strong the Romans have become, just how many of them there are.
+0]You think you’re valiantly protecting your homeland, but you’re really just sending your people in to die.
+0]Trust me.
+0]I've seen it happen.
+1]Seen it happen where, exactly?
+1]Epirus?
+1]Of course that hamlet got run over.
+1]But this is Athens, child.
+1]The pride and joy of Greece.
 
-3:Choice3
+Choice2
+1]This is my home, and I wouldn’t dream of giving it up as easily as everyone else gave up theirs.
+0](21)Don’t speak about my city like that. (22)Rome is more powerful than even Athens. (4)I give up.
+
+21:22
+0]How dare you speak about my city like that.
+0]We are Spartans, we trained our whole lives for an invasion.
+0]Do you still not understand?
+0]I’m here to stop you from making the same mistake we did.
+1]“We” is an awfully large word, child.
+1]I see no scars on you, no signs of battle.
+1]You’re either a coward or a weakling, and I have very little patience for both.
+0]...
+0]It is true that on the day Epirus was invaded, I could not fight.
+0]I know this.
+0]I have come to terms with it.
+0]For weeks I prayed to go back to that day so I could fight alongside my friends, so that maybe I could have made a difference.
+0]But it never happened.
+0]So to make up for it, I’m trying to make a difference now.
+0]This is my way of fighting the war I couldn’t back then.
+0]So don’t you dare call me a coward when I am trying everything I can.
+1]I guess I thought too little of you, Melania.
+1]But do you not understand that this is my way of fighting the war?
+1]I am taking the opportunity that you wished you had taken.
+0]Thing is, Athena, I no longer regret what I did.
+0]Even if I was there that day, there was nothing I could have done.
+0]What I’m doing right now is more impactful than my presence on the battlefield would have ever been.
+1]Maybe, but today will be different.
+1]While you may not have been able to make a difference, I know I will.
+0]Why don't you get it?
+
+22:END
+0]They will overtake even your home, Athena.
+0]They were like nothing we’d ever seen before, with weapons we had never even heard of.
+0]You can’t win this one.
+1]But how will we know unless we try?
+1]How will I die with honor knowing I could have done something?
+0]So you will send your city to die for your honor?
+0]For your own personal satisfaction?
+0]It's not worth it Athena, you must realise that.
+0]Your people will live, and you will live within them.
+1]But they won't die!
+1]We will win!
+1]I am the goddess of war, of course we will win!
+0]You are more than simply the goddess of war, Athena.
+0]You’re the goddess of civilization.
+0]Your people love you for more than just your protection, have learnt more from you than just war.
+0]And they will continue to love you, regardless of who rules them.
+1]I...
+1]...
+1]Fine.
+0]Fine?
+1]Fine
+0]Your people will be alright, Athena.
+1]I know. 
+1]Now leave, before I change my mind.
+
+3:END
 0]test3
 
 4:END
 0]Have it your way then, send your children in to die. I overestimated you, Athena.
 
 END:
-0]Before Athena can even respond, you turn around and leave the temple, hearing only a sigh and the clanking of metal.
+0]You turn around and leave the temple, hearing only a sigh and the clanking of metal.
