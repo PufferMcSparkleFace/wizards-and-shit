@@ -70,8 +70,6 @@ Choice1
 0]But have faith in your people, Athena.
 0]You’ve taught them well.
 1]...
-1]...
-1]...
 1]Leave me. I need time to think.
 
 2:Choice2
@@ -138,13 +136,77 @@ Choice2
 1]...
 1]Fine.
 0]Fine?
-1]Fine
+1]Fine.
 0]Your people will be alright, Athena.
 1]I know. 
 1]Now leave, before I change my mind.
 
-3:END
-0]test3
+3:Choice3
+0]How dare you speak that way about your fellow gods?
+0]They're your family, and they’re struggling just as much as you are.
+0]Do you have any idea how much they look up to you?
+0]Any idea how much they respect how calm you’ve been?
+0]How much they respect your tenacity, your determination, and your unwillingness to give up?
+0]You don’t, do you?
+1]It does not matter to me.
+1]I lost all respect for the others the moment they threw down their arms.
+1]I don’t owe them respect or support just because they chose not to stand up for themselves.
+1]They are gods, Melania, not children.
+1]They had easily enough power to do something, anything.
+1]I stand by the Athenians because they are my children, and they do not have the power to make that choice.
+
+Choice3
+1]Neither do you.
+0](31)But I do have a choice. (32)They may not have a choice, but you do. (4)I give up.
+
+31:2
+0]Of course I have a choice!
+0]I made the choice to be here, right now.
+0]I could have easily sat by and watched you send your city to its grave.
+0]But I chose to try and stop you.
+1]Stop me from what?
+1]From defending what’s mine?
+0]You’re not defending them, Athena!
+0]Why don’t you understand?
+
+32:Choice32
+0] But you do have a choice, Athena!
+0]You can choose to save them!
+0]To surrender and to let them live another day, even if it is under Roman rule!
+1]I can’t do that, child.
+1]They need me.
+1]I can’t just let them go so easily.
+0]Why?
+0]What are you so afraid of?
+1] I wouldn’t expect you to understand.
+1]You’re not a mother, you’re just some kid insistent on carrying the world on her shoulders.
+1]Let me fight my own battles.
+
+Choice32
+1]Let me fight my own battles.
+0](321)This isn't just your battle, Athena. (4)Fine.
+
+321:END
+0]This isn’t just your battle, Athena.
+0]This is theirs too.
+0]You may be their mother, but you don't own them.
+1]But they’d be lost without me!
+1]I gave them everything!
+1]I am this city!
+0]Do you seriously believe that?
+0]Why don’t you have faith in your children?
+0]Even without the Romans, you’d have to let them go eventually.
+1]...
+1]You may be right.
+1]But even still, how can I let them go to the Romans?
+1]How can I be sure the Romans won’t torture and enslave them?
+1]How can I be sure they’ll be safe without me?
+0]I can’t guarantee anything.
+0]No one can.
+0]But have faith in your people, Athena.
+0]You’ve taught them well.
+1]...
+1]Leave me. I need time to think.
 
 4:END
 0]Have it your way then, send your children in to die. I overestimated you, Athena.
