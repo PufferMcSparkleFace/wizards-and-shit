@@ -1,16 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+[RequireComponent(typeof(Dialogue))]
 
 public class DialogueReader : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Dialogue dialogue;
+    public TextMeshProUGUI textUI;
+    public GameObject buttonPrefab;
+    public GameObject choicesPanel;
+
     void Start()
     {
-        
+        dialogue = GetComponent<Dialogue>();
+        choicesPanel.SetActive(false);
+        textUI.text = "";
     }
 
-    // Update is called once per frame
     void Update()
     {
         
