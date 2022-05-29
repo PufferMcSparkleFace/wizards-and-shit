@@ -44,6 +44,7 @@ public class DialogueReader : MonoBehaviour
                 Choice tempChoice = line.choices[i];
                 GameObject go = Instantiate(buttonPrefab, choicesPanel.transform);
                 go.GetComponentInChildren<TextMeshProUGUI>().text = tempChoice.dialogue;
+                go.GetComponent<Button>().onClick.AddListener(()=> SelectChoice(tempChoice.targetSegment));
             }
 
             choicesPanel.SetActive(true);
@@ -60,5 +61,24 @@ public class DialogueReader : MonoBehaviour
         textUI.text = "";
         choicesPanel.SetActive(false);
         dialogue.ResetDialog();
+    }
+
+    public void SelectChoice(string choiceSelected)
+    {
+        Line tempLine = dialogue.conversation.ProgressViaChoice(choiceSelected);
+
+        foreach(Transform children in choicesPanel.transform)
+        {
+            Destroy(children.gameObject);
+        }
+
+        choicesPanel.SetActive(false);
+
+        textUI.text = tempLine.dialogue;
+    }
+
+    public void SelectCallBack(string callBack)
+    {
+
     }
 }
