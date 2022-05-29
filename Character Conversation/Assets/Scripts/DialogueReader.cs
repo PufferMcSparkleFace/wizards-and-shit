@@ -22,6 +22,14 @@ public class DialogueReader : MonoBehaviour
 
     void Update()
     {
-        
+        if (!Input.GetKeyDown(KeyCode.Space))
+        {
+            return;
+        }
+
+        Line line = dialogue.conversation.Progress();
+
+        textUI.text = line.dialogue;
+
     }
 }
