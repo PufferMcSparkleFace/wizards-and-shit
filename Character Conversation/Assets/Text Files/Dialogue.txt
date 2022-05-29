@@ -180,7 +180,6 @@ Choice3
 0]What are you so afraid of?
 1] I wouldn’t expect you to understand.
 1]You’re not a mother, you’re just some kid insistent on carrying the world on her shoulders.
-1]Let me fight my own battles.
 
 Choice32
 1]Let me fight my own battles.
