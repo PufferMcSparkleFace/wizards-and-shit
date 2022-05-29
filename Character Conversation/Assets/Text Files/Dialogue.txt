@@ -170,7 +170,7 @@ Choice3
 0]Why don’t you understand?
 
 32:Choice32
-0] But you do have a choice, Athena!
+0]But you do have a choice, Athena!
 0]You can choose to save them!
 0]To surrender and to let them live another day, even if it is under Roman rule!
 1]I can’t do that, child.
@@ -178,7 +178,7 @@ Choice3
 1]I can’t just let them go so easily.
 0]Why?
 0]What are you so afraid of?
-1] I wouldn’t expect you to understand.
+1]I wouldn’t expect you to understand.
 1]You’re not a mother, you’re just some kid insistent on carrying the world on her shoulders.
 
 Choice32
