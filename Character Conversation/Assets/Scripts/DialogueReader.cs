@@ -45,6 +45,10 @@ public class DialogueReader : MonoBehaviour
                 GameObject go = Instantiate(buttonPrefab, choicesPanel.transform);
                 go.GetComponentInChildren<TextMeshProUGUI>().text = tempChoice.dialogue;
                 go.GetComponent<Button>().onClick.AddListener(()=> SelectChoice(tempChoice.targetSegment));
+                if (!string.IsNullOrEmpty(tempChoice.callBack))
+                {
+                    go.GetComponent<Button>().onClick.AddListener(() => SelectCallBack(tempChoice.callBack));
+                }
             }
 
             choicesPanel.SetActive(true);
@@ -79,6 +83,11 @@ public class DialogueReader : MonoBehaviour
 
     public void SelectCallBack(string callBack)
     {
+        Invoke(callBack, 0);
+    }
 
+    public void TestFunction()
+    {
+        print("success");
     }
 }
