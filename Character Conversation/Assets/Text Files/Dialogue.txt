@@ -1,0 +1,37 @@
+Start:First Choice
+0]Athena!
+0]Call off your troops!
+0]I am M-
+1]Melania of Epirus?
+1]I know, child.
+1]All too well.
+1]Hermes has told me all about your little adventure.
+1]I know what you’ve done, what you’re doing, who you’ve talked to.
+1]But I am nothing like them.
+1]You really think I would just sit on my hands these last few months, just wallow in my sorrows like the other deadbeat gods you’ve “healed”?
+1]Think I’d drown myself in alcohol like Dionysus?
+1]Think I’d run away like Artemis?
+1]Think I’d throw a tantrum and destroy centuries of painstaking work like Zeus?
+1]Of course not!
+1]Of course not.
+1]They all gave up at the first sign of the Romans, not even willing to put their precious little lives on the line for the people that have worshiped them all these years, who have built them into the gods they are today.
+1]I am not like them.
+
+First Choice
+1]Athens and its people are my children, and I refuse to let them go without a fight.
+0](1)You’re exactly like them. (2)Athens will die if you fight. (3)Don’t say that about the other gods.
+
+1:Choice1
+0]test1
+
+2:Choice2
+0]test2
+
+3:Choice3
+0]test3
+
+4:END
+0]Have it your way then, send your children in to die. I overestimated you, Athena.
+
+END:
+0]Before Athena can even respond, you turn around and leave the temple, hearing only a sigh and the clanking of metal.

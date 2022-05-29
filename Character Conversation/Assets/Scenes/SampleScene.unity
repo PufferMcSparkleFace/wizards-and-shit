@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55e503f834e3d0241a9643802befc10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textAsset: {fileID: 4900000, guid: 927649006afd8974cb21d96ea2467694, type: 3}
+  textAsset: {fileID: 4900000, guid: df372c66edd765040b2cff4884089480, type: 3}
 --- !u!114 &566136193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2438fea2197e42344a3bd28b09378c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textAsset: {fileID: 4900000, guid: 927649006afd8974cb21d96ea2467694, type: 3}
+  textAsset: {fileID: 4900000, guid: df372c66edd765040b2cff4884089480, type: 3}
   conversation:
     segments: []
     currentSegment: 
@@ -694,7 +694,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -147.50568, y: -58.22589, z: -150.74036, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
