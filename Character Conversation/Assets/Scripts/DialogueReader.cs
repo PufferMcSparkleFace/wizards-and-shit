@@ -56,8 +56,20 @@ public class DialogueReader : MonoBehaviour
             return;
         }
 
-        textUI.text = line.dialogue;
+        //textUI.text = line.dialogue;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(line.dialogue));
 
+    }
+
+    IEnumerator TypeSentence (string sentence)
+    {
+        textUI.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            textUI.text += letter;
+            yield return null;
+        }
     }
 
     void EndDialogue()
