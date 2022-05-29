@@ -35,11 +35,11 @@ public class DialogueReader : MonoBehaviour
             return;
         }
 
-        if(line.choices.Length > 0)
+        if (line.choices.Length > 0)
         {
             textUI.text = "";
 
-            for(int i = 0; i < line.choices.Length; i++)
+            for (int i = 0; i < line.choices.Length; i++)
             {
                 Choice tempChoice = line.choices[i];
                 GameObject go = Instantiate(buttonPrefab, choicesPanel.transform);
@@ -47,6 +47,7 @@ public class DialogueReader : MonoBehaviour
             }
 
             choicesPanel.SetActive(true);
+
             return;
         }
 

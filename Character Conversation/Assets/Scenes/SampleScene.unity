@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 5
+    m_Top: 4
     m_Bottom: 0
   m_ChildAlignment: 1
   m_Spacing: 0
@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 566136192}
   - component: {fileID: 566136191}
   m_Layer: 0
-  m_Name: Dialogue
+  m_Name: DialogueManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -352,9 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e28f3860f0002964f806a710bc5bd5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 566136192}
   textUI: {fileID: 1191616545}
-  buttonPrefab: {fileID: 5138800193138017908, guid: 542ed7bc027286343bcd2c8ba4174f86,
+  buttonPrefab: {fileID: 7476895570397868667, guid: 542ed7bc027286343bcd2c8ba4174f86,
     type: 3}
   choicesPanel: {fileID: 513890605}
 --- !u!114 &566136192

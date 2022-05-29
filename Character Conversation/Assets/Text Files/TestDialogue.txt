@@ -8,15 +8,15 @@ TruckTalk
 0] Yes, would you consider a trade?
 1] (TestA)A (TestB)B (TestC:TestFunction)C
 
-TestA: END
+TestA:END
 0] A.
 1] ok then.
 
-TestB: END
+TestB:END
 0] B.
 1] ok then.
 
-TestC: END
+TestC:END
 0] C.
 1] ok then.
 
