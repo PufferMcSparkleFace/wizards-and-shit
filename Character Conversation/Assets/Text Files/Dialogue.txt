@@ -73,7 +73,7 @@ Choice1
 1]Leave me. I need time to think.
 
 2:Choice2
-0]You don’t understand! It won’t be a fight, Athena, it will be a slaughter.
+0]It won’t be a fight, Athena, it will be a slaughter.
 0]You have no idea how strong the Romans have become, just how many of them there are.
 0]You think you’re valiantly protecting your homeland, but you’re really just sending your people in to die.
 0]Trust me.
