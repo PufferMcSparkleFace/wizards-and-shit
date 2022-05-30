@@ -5,10 +5,12 @@ using UnityEngine.UI;
 using TMPro;
 
 [RequireComponent(typeof(Dialogue))]
+[RequireComponent(typeof(Line))]
 
 public class DialogueReader : MonoBehaviour
 {
     public Dialogue dialogue;
+    public Line line;
     public TextMeshProUGUI textUI;
     public GameObject buttonPrefab;
     public GameObject choicesPanel;
@@ -18,6 +20,7 @@ public class DialogueReader : MonoBehaviour
     void Start()
     {
         dialogue = GetComponent<Dialogue>();
+        line = GetComponent<Line>();
         choicesPanel.SetActive(false);
         textUI.text = "";
     }

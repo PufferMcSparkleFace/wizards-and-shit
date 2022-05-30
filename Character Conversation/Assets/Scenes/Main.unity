@@ -359,6 +359,8 @@ MonoBehaviour:
   buttonPrefab: {fileID: 7476895570397868667, guid: 542ed7bc027286343bcd2c8ba4174f86,
     type: 3}
   choicesPanel: {fileID: 513890605}
+  athenaTitle: {fileID: 1834915631}
+  melaniaTitle: {fileID: 1174608866}
 --- !u!114 &566136192
 MonoBehaviour:
   m_ObjectHideFlags: 0
