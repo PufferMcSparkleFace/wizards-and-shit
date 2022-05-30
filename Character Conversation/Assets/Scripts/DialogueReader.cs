@@ -23,7 +23,7 @@ public class DialogueReader : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         if (choicesPanel.activeInHierarchy)
         {
             textUI.text = "";
