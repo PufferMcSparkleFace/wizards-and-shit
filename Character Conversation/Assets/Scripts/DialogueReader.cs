@@ -24,6 +24,11 @@ public class DialogueReader : MonoBehaviour
 
     void Update()
     {
+        if (choicesPanel.activeInHierarchy)
+        {
+            textUI.text = "";
+        }
+
         if (!Input.GetKeyDown(KeyCode.Space) || choicesPanel.activeInHierarchy)
         {
             return;
