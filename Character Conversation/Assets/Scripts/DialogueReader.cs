@@ -12,6 +12,8 @@ public class DialogueReader : MonoBehaviour
     public TextMeshProUGUI textUI;
     public GameObject buttonPrefab;
     public GameObject choicesPanel;
+    public GameObject athenaTitle;
+    public GameObject melaniaTitle;
 
     void Start()
     {
@@ -21,7 +23,7 @@ public class DialogueReader : MonoBehaviour
     }
 
     void Update()
-    { 
+    {
         if (!Input.GetKeyDown(KeyCode.Space) || choicesPanel.activeInHierarchy)
         {
             return;
