@@ -14,7 +14,6 @@ public class DialogueReader : MonoBehaviour
     public GameObject choicesPanel;
     public GameObject athenaTitle;
     public GameObject melaniaTitle;
-    public int characterIDReader;
 
     void Start()
     {
@@ -23,20 +22,8 @@ public class DialogueReader : MonoBehaviour
         textUI.text = "";
     }
 
-    public void CharacterID(string lineInformation) // take the line information and split it into dialogue or choices.
-    {
-        string[] assetLine = lineInformation.Split(']'); // split the line at the speaker marker }.
-        characterIDReader = int.Parse(assetLine[0]); // first element is the ID
-
-    }
-
     void Update()
-    { 
-        if(characterIDReader == 1)
-        {
-            print("Athena is speaking");
-        }
-
+    {
         if (!Input.GetKeyDown(KeyCode.Space) || choicesPanel.activeInHierarchy)
         {
             return;
