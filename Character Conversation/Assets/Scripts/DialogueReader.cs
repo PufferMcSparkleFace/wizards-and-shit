@@ -9,11 +9,10 @@ using TMPro;
 public class DialogueReader : MonoBehaviour
 {
     public Dialogue dialogue;
+    public Line lineScript;
     public TextMeshProUGUI textUI;
     public GameObject buttonPrefab;
     public GameObject choicesPanel;
-    public GameObject athenaTitle;
-    public GameObject melaniaTitle;
 
     void Start()
     {
@@ -24,6 +23,17 @@ public class DialogueReader : MonoBehaviour
 
     void Update()
     {   
+        if(lineScript.characterID == 0)
+        {
+            //textUI.color = Color.black;
+            print("Melania");
+        }
+        if(lineScript.characterID == 1)
+        {
+            //textUI.color = Color.white;
+            print("Athena");
+        }
+
         if (choicesPanel.activeInHierarchy)
         {
             textUI.text = "";
@@ -34,21 +44,21 @@ public class DialogueReader : MonoBehaviour
             return;
         }
 
-        Line line = dialogue.conversation.Progress();
+        lineScript = dialogue.conversation.Progress();
 
-        if (line == null)
+        if (lineScript == null)
         {
             EndDialogue();
             return;
         }
 
-        if (line.choices.Length > 0)
+        if (lineScript.choices.Length > 0)
         {
             textUI.text = "";
 
-            for (int i = 0; i < line.choices.Length; i++)
+            for (int i = 0; i < lineScript.choices.Length; i++)
             {
-                Choice tempChoice = line.choices[i];
+                Choice tempChoice = lineScript.choices[i];
                 GameObject go = Instantiate(buttonPrefab, choicesPanel.transform);
                 go.GetComponentInChildren<TextMeshProUGUI>().text = tempChoice.dialogue;
                 go.GetComponent<Button>().onClick.AddListener(()=> SelectChoice(tempChoice.targetSegment));
@@ -65,7 +75,7 @@ public class DialogueReader : MonoBehaviour
 
         //textUI.text = line.dialogue;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(line.dialogue));
+        StartCoroutine(TypeSentence(lineScript.dialogue));
 
     }
 
