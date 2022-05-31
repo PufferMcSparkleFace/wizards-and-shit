@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         {
             print("LoadingNewScene");
             Cursor.lockState = CursorLockMode.None;
-            levelChanger.FadeToLevel(1);
+            levelChanger.FadeToLevel(2);
         }
     }
 
