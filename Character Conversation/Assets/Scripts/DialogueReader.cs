@@ -23,7 +23,7 @@ public class DialogueReader : MonoBehaviour
 
     void Update()
     {   
-        if(lineScript.characterID == 0)
+        /*if(lineScript.characterID == 0)
         {
             //textUI.color = Color.black;
             print("Melania");
@@ -32,7 +32,7 @@ public class DialogueReader : MonoBehaviour
         {
             //textUI.color = Color.white;
             print("Athena");
-        }
+        }*/
 
         if (choicesPanel.activeInHierarchy)
         {
