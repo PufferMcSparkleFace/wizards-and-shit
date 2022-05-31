@@ -118,14 +118,4 @@ public class DialogueReader : MonoBehaviour
     {
         print("success");
     }
-
-    public void NextScene()
-    {
-        SceneManager.LoadScene("Prelude");
-    }
-
-    public void Exit()
-    {
-        Application.Quit();
-    }
 }
