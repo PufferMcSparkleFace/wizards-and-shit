@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Dialogue))]
 
@@ -116,5 +117,15 @@ public class DialogueReader : MonoBehaviour
     public void TestFunction()
     {
         print("success");
+    }
+
+    public void NextScene()
+    {
+        SceneManager.LoadScene("Prelude");
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

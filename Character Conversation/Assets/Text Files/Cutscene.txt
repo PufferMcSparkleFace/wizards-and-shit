@@ -1,0 +1,14 @@
+Start:Menu
+0]Test
+
+Menu
+0](1:NextScene)Start (2:Exit)Exit
+
+1:END
+0]Scene Loading...
+
+2:END
+0]Exiting...
+
+END
+0]Thank you for Playing!
