@@ -14,6 +14,7 @@ public class DialogueReader2 : MonoBehaviour
     public TextMeshProUGUI textUI;
     public GameObject buttonPrefab;
     public GameObject choicesPanel;
+    public LevelChanger levelChanger;
 
     void Start()
     {
@@ -36,15 +37,6 @@ public class DialogueReader2 : MonoBehaviour
         }
 
         lineScript = dialogue.conversation.Progress();
-
-        if (lineScript.characterID == 0)
-        {
-            textUI.color = Color.black;
-        }
-        if (lineScript.characterID == 1)
-        {
-            textUI.color = Color.white;
-        }
 
         if (lineScript == null)
         {
@@ -93,7 +85,7 @@ public class DialogueReader2 : MonoBehaviour
     {
         textUI.text = "";
         choicesPanel.SetActive(false);
-        dialogue.ResetDialog();
+        levelChanger.FadeToLevel(1);
     }
 
     public void SelectChoice(string choiceSelected)

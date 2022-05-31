@@ -163,6 +163,7 @@ MonoBehaviour:
   buttonPrefab: {fileID: 7476895570397868667, guid: 542ed7bc027286343bcd2c8ba4174f86,
     type: 3}
   choicesPanel: {fileID: 513890605}
+  levelChanger: {fileID: 2094212287}
 --- !u!114 &566136192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +534,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094212287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8092958664800397862, guid: 24468a526605cd64d8c22ba9b38a5934,
+    type: 3}
+  m_PrefabInstance: {fileID: 1707994075}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d44561867a812e648ba4c3f3b81c84ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6068753717452879814
 PrefabInstance:
   m_ObjectHideFlags: 0
