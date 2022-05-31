@@ -1,9 +1,16 @@
 Start:END
-0] Hello there.
-1] Welcome!
-0] I might enquire to buying the truck out front?
-1] Ah yes, the 45. It still runs well.
+0]Many cities have already fallen to the Romans, and as the Greeks were forced to adopt Roman customs, their gods began to die out.
+1]Unsurprisingly, they did not take to their deaths particularly well, and their refusal to accept the end has caused problems throughout the land. 
+0]Zeus created uncontrollably cataclysmic thunderstorms.
+0]Hades and Persephone shut the gates of the underworld.
+0]And some, like Hermes and Hephaestus, just desperately clung onto what was left of their lives, trying to fight back.
+0]The first city to fall to the Romans was the western city of Epirus, the home of our main character Melania.
+1]Unlike her Spartan peers, she was physically frail, stopping her from training in war like everybody else.
+0]Instead, she was often relied upon to provide emotional support to the soldiers.
+0]As such, she did not participate in the resistance against the Romans, and so was one of few people to survive.
+0]Feeling guilty for not helping her friends, she resolved to travel across Greece and console the gods, helping them to move on.
+0]This journey has led her to Athens, where Athena is planning to mount a war effort against the Romans in a last-ditch attempt to save her city and her people.
 
 END:
-1] Well thanks for coming.
+1]Melania knows that even though Athens is a formidable military force, it does not stand a chance against the Romans, and has come to convince Athena to surrender before she sends her people to their death.
 
