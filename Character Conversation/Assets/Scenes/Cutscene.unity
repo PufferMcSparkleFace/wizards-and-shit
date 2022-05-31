@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &266865270 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6068753718442629095, guid: f15d5b596100a004ca7789c95dc98a34,
+    type: 3}
+  m_PrefabInstance: {fileID: 972354384}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &972354384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -146,7 +158,7 @@ PrefabInstance:
     - target: {fileID: 6068753717199825335, guid: f15d5b596100a004ca7789c95dc98a34,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6068753717199825335, guid: f15d5b596100a004ca7789c95dc98a34,
         type: 3}
@@ -247,16 +259,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2239390151759493434, guid: 27e6df98e98ad7d40b741f08bada8f55,
+      propertyPath: textUI
+      value: 
+      objectReference: {fileID: 266865270}
+    - target: {fileID: 2239390151759493434, guid: 27e6df98e98ad7d40b741f08bada8f55,
+        type: 3}
+      propertyPath: choicesPanel
+      value: 
+      objectReference: {fileID: 1589708663}
     - target: {fileID: 2239390151759493435, guid: 27e6df98e98ad7d40b741f08bada8f55,
         type: 3}
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2239390151759493572, guid: 27e6df98e98ad7d40b741f08bada8f55,
+        type: 3}
+      propertyPath: textAsset
+      value: 
+      objectReference: {fileID: 4900000, guid: df372c66edd765040b2cff4884089480, type: 3}
     - target: {fileID: 2239390151759493573, guid: 27e6df98e98ad7d40b741f08bada8f55,
         type: 3}
       propertyPath: textAsset
       value: 
-      objectReference: {fileID: 4900000, guid: 146fc71df3f26ae42a59fff98dafe9a3, type: 3}
+      objectReference: {fileID: 4900000, guid: df372c66edd765040b2cff4884089480, type: 3}
     - target: {fileID: 2239390151759493575, guid: 27e6df98e98ad7d40b741f08bada8f55,
         type: 3}
       propertyPath: m_RootOrder
@@ -406,6 +432,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1589708663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6068753717228564203, guid: f15d5b596100a004ca7789c95dc98a34,
+    type: 3}
+  m_PrefabInstance: {fileID: 972354384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2121178314
 GameObject:
   m_ObjectHideFlags: 0
