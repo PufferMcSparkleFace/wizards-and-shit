@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.2f;
     public LayerMask groundMask;
     public bool isNearAthena = false;
+    public LevelChanger levelChanger;
 
     Vector3 velocity;
     bool isGrounded;
@@ -41,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         {
             print("LoadingNewScene");
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("Main");
+            levelChanger.FadeToLevel(1);
         }
     }
 
@@ -60,4 +61,5 @@ public class PlayerMovement : MonoBehaviour
             isNearAthena = false;
         }
     }
+
 }

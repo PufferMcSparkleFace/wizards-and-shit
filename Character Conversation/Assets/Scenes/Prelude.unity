@@ -165,7 +165,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177560967}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -361,6 +361,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   isNearAthena: 0
+  levelChanger: {fileID: 1567626097}
 --- !u!1 &508760447
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1567626096}
   - component: {fileID: 1567626095}
+  - component: {fileID: 1567626097}
   m_Layer: 0
   m_Name: LevelChanger
   m_TagString: Untagged
@@ -906,6 +908,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1567626097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567626094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d44561867a812e648ba4c3f3b81c84ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1567626095}
 --- !u!1 &1653855277
 GameObject:
   m_ObjectHideFlags: 0
