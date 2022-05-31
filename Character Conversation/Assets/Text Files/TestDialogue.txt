@@ -6,7 +6,7 @@ Start:TruckTalk
 
 TruckTalk
 0] Yes, would you consider a trade?
-1] (TestA)A (TestB)B (TestC:TestFunction)C
+1] (TestA)A (TestB)B (TestC)C
 
 TestA:END
 0] A.

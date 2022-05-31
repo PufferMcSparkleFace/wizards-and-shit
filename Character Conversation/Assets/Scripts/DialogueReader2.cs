@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Dialogue))]
 
-public class DialogueReader : MonoBehaviour
+public class DialogueReader2 : MonoBehaviour
 {
     public Dialogue dialogue;
     public Line lineScript;
@@ -19,12 +19,12 @@ public class DialogueReader : MonoBehaviour
     {
         dialogue = GetComponent<Dialogue>();
         choicesPanel.SetActive(false);
-        textUI.color = Color.black;
-        textUI.text = "Athena!";
+        textUI.color = Color.white;
+        textUI.text = "The game is set towards the end of Greece's dominance, as the Romans are beginning to invade.";
     }
 
     void Update()
-    {
+    {   
         if (choicesPanel.activeInHierarchy)
         {
             textUI.text = "";
@@ -61,7 +61,7 @@ public class DialogueReader : MonoBehaviour
                 Choice tempChoice = lineScript.choices[i];
                 GameObject go = Instantiate(buttonPrefab, choicesPanel.transform);
                 go.GetComponentInChildren<TextMeshProUGUI>().text = tempChoice.dialogue;
-                go.GetComponent<Button>().onClick.AddListener(() => SelectChoice(tempChoice.targetSegment));
+                go.GetComponent<Button>().onClick.AddListener(()=> SelectChoice(tempChoice.targetSegment));
                 if (!string.IsNullOrEmpty(tempChoice.callBack))
                 {
                     go.GetComponent<Button>().onClick.AddListener(() => SelectCallBack(tempChoice.callBack));
@@ -79,7 +79,7 @@ public class DialogueReader : MonoBehaviour
 
     }
 
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence (string sentence)
     {
         textUI.text = "";
         foreach (char letter in sentence.ToCharArray())
@@ -100,7 +100,7 @@ public class DialogueReader : MonoBehaviour
     {
         Line tempLine = dialogue.conversation.ProgressViaChoice(choiceSelected);
 
-        foreach (Transform children in choicesPanel.transform)
+        foreach(Transform children in choicesPanel.transform)
         {
             Destroy(children.gameObject);
         }
@@ -113,10 +113,5 @@ public class DialogueReader : MonoBehaviour
     public void SelectCallBack(string callBack)
     {
         Invoke(callBack, 0);
-    }
-
-    public void TestFunction()
-    {
-        print("success");
     }
 }
