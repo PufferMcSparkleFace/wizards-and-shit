@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.2f;
     public LayerMask groundMask;
+    public bool isNearAthena = false;
 
     Vector3 velocity;
     bool isGrounded;
@@ -34,5 +35,26 @@ public class PlayerMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        if(isNearAthena && Input.GetKeyDown(KeyCode.Space))
+        {
+            print("LoadingNewScene");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Athena" || !isNearAthena)
+        {
+            isNearAthena = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Athena" || isNearAthena)
+        {
+            isNearAthena = false;
+        }
     }
 }
