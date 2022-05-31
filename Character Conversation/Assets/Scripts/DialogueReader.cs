@@ -19,7 +19,8 @@ public class DialogueReader : MonoBehaviour
     {
         dialogue = GetComponent<Dialogue>();
         choicesPanel.SetActive(false);
-        textUI.text = "";
+        textUI.color = Color.black;
+        textUI.text = "Athena!";
     }
 
     void Update()
