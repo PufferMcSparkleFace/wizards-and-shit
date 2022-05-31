@@ -33,18 +33,16 @@ public class DialogueReader : MonoBehaviour
             return;
         }
 
+        lineScript = dialogue.conversation.Progress();
+
         if (lineScript.characterID == 0)
         {
-            //textUI.color = Color.black;
-            print("Melania");
+            textUI.color = Color.black;
         }
         if (lineScript.characterID == 1)
         {
-            //textUI.color = Color.white;
-            print("Athena");
+            textUI.color = Color.white;
         }
-
-        lineScript = dialogue.conversation.Progress();
 
         if (lineScript == null)
         {
