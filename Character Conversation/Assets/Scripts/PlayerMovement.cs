@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
         if(isNearAthena && Input.GetKeyDown(KeyCode.Space))
         {
             print("LoadingNewScene");
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Main");
         }
     }
 
