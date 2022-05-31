@@ -28,14 +28,21 @@ public class DialogueReader : MonoBehaviour
         if (choicesPanel.activeInHierarchy)
         {
             textUI.text = "";
+            return;
         }
 
-        if (!Input.GetKeyDown(KeyCode.Space) || choicesPanel.activeInHierarchy)
+        if (!Input.GetKeyDown(KeyCode.Space))
         {
             return;
         }
 
         lineScript = dialogue.conversation.Progress();
+
+        if (lineScript == null)
+        {
+            EndDialogue();
+            return;
+        }
 
         if (lineScript.characterID == 0)
         {
@@ -44,12 +51,6 @@ public class DialogueReader : MonoBehaviour
         if (lineScript.characterID == 1)
         {
             textUI.color = Color.white;
-        }
-
-        if (lineScript == null)
-        {
-            EndDialogue();
-            return;
         }
 
         if (lineScript.choices.Length > 0)
@@ -93,7 +94,8 @@ public class DialogueReader : MonoBehaviour
     {
         textUI.text = "";
         choicesPanel.SetActive(false);
-        dialogue.ResetDialog();
+        print("QuitGame");
+        Application.Quit();
     }
 
     public void SelectChoice(string choiceSelected)
