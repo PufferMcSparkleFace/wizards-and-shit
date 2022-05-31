@@ -23,17 +23,6 @@ public class DialogueReader : MonoBehaviour
 
     void Update()
     {   
-        /*if(lineScript.characterID == 0)
-        {
-            //textUI.color = Color.black;
-            print("Melania");
-        }
-        if(lineScript.characterID == 1)
-        {
-            //textUI.color = Color.white;
-            print("Athena");
-        }*/
-
         if (choicesPanel.activeInHierarchy)
         {
             textUI.text = "";
@@ -42,6 +31,17 @@ public class DialogueReader : MonoBehaviour
         if (!Input.GetKeyDown(KeyCode.Space) || choicesPanel.activeInHierarchy)
         {
             return;
+        }
+
+        if (lineScript.characterID == 0)
+        {
+            //textUI.color = Color.black;
+            print("Melania");
+        }
+        if (lineScript.characterID == 1)
+        {
+            //textUI.color = Color.white;
+            print("Athena");
         }
 
         lineScript = dialogue.conversation.Progress();
