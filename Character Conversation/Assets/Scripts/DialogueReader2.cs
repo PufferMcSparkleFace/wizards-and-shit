@@ -15,6 +15,7 @@ public class DialogueReader2 : MonoBehaviour
     public GameObject buttonPrefab;
     public GameObject choicesPanel;
     public LevelChanger levelChanger;
+    public bool isTyping = false;
 
     void Start()
     {
@@ -41,6 +42,14 @@ public class DialogueReader2 : MonoBehaviour
         if (lineScript == null)
         {
             EndDialogue();
+            return;
+        }
+
+        if (isTyping)
+        {
+            StopAllCoroutines();
+            textUI.text = lineScript.dialogue;
+            isTyping = false;
             return;
         }
 
@@ -73,12 +82,14 @@ public class DialogueReader2 : MonoBehaviour
 
     IEnumerator TypeSentence (string sentence)
     {
+        isTyping = true;
         textUI.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             textUI.text += letter;
             yield return new WaitForSeconds(0.03f);
         }
+        isTyping = false;
     }
 
     void EndDialogue()

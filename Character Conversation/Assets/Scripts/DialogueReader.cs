@@ -14,6 +14,7 @@ public class DialogueReader : MonoBehaviour
     public TextMeshProUGUI textUI;
     public GameObject buttonPrefab;
     public GameObject choicesPanel;
+    public bool isTyping = false;
 
     void Start()
     {
@@ -82,12 +83,14 @@ public class DialogueReader : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence)
     {
+        isTyping = true;
         textUI.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             textUI.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(0.03f);
         }
+        isTyping = false;
     }
 
     void EndDialogue()
