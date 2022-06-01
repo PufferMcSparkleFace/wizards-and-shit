@@ -16,6 +16,7 @@ public class DialogueReader2 : MonoBehaviour
     public GameObject choicesPanel;
     public LevelChanger levelChanger;
     public bool isTyping = false;
+    public string currentSentence;
 
     void Start()
     {
@@ -45,13 +46,13 @@ public class DialogueReader2 : MonoBehaviour
             return;
         }
 
-       /* if (isTyping)
+        if (isTyping)
         {
             StopAllCoroutines();
-            textUI.text = lineScript.dialogue;
+            textUI.text = currentSentence;
             isTyping = false;
             return;
-        }*/
+        }
 
         if (lineScript.choices.Length > 0)
         {
@@ -76,7 +77,8 @@ public class DialogueReader2 : MonoBehaviour
 
         //textUI.text = line.dialogue;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(lineScript.dialogue));
+        currentSentence = lineScript.dialogue;
+        StartCoroutine(TypeSentence(currentSentence));
 
     }
 
