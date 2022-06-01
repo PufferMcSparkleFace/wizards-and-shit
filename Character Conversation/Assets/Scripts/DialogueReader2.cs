@@ -45,13 +45,13 @@ public class DialogueReader2 : MonoBehaviour
             return;
         }
 
-        if (isTyping)
+       /* if (isTyping)
         {
             StopAllCoroutines();
             textUI.text = lineScript.dialogue;
             isTyping = false;
             return;
-        }
+        }*/
 
         if (lineScript.choices.Length > 0)
         {
