@@ -77,7 +77,7 @@ public class DialogueReader2 : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             textUI.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(0.03f);
         }
     }
 
