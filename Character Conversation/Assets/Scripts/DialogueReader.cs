@@ -34,6 +34,7 @@ public class DialogueReader : MonoBehaviour
             textUI.text = "";
             dialogueBox.SetActive(false);
             StopAllCoroutines();
+            melaniaTitle.SetActive(false);
             return;
         }
 
