@@ -15,6 +15,9 @@ public class DialogueReader : MonoBehaviour
     public GameObject buttonPrefab;
     public GameObject choicesPanel;
     public bool isTyping = false;
+    public GameObject dialogueBox;
+    public GameObject athenaTitle;
+    public GameObject melaniaTitle;
 
     void Start()
     {
@@ -29,6 +32,7 @@ public class DialogueReader : MonoBehaviour
         if (choicesPanel.activeInHierarchy)
         {
             textUI.text = "";
+            dialogueBox.SetActive(false);
             StopAllCoroutines();
             return;
         }
@@ -48,11 +52,17 @@ public class DialogueReader : MonoBehaviour
 
         if (lineScript.characterID == 0)
         {
-            textUI.color = Color.black;
+            dialogueBox.SetActive(true);
+            melaniaTitle.SetActive(true);
+            athenaTitle.SetActive(false);
+            //textUI.color = Color.black;
         }
         if (lineScript.characterID == 1)
         {
-            textUI.color = Color.white;
+            melaniaTitle.SetActive(false);
+            athenaTitle.SetActive(true);
+            dialogueBox.SetActive(true);
+            //textUI.color = Color.white;
         }
 
         if (lineScript.choices.Length > 0)
