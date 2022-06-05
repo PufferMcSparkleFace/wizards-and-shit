@@ -47,16 +47,11 @@ public class DialogueReader : MonoBehaviour
         if (lineScript == null)
         {
             EndDialogue();
+            StopAllCoroutines();
+            textUI.text = "";
             return;
         }
 
-        /*if (lineScript.characterID == 0)
-        {
-            dialogueBox.SetActive(true);
-            melaniaTitle.SetActive(true);
-            athenaTitle.SetActive(false);
-            //textUI.color = Color.black;
-        }*/
         if (lineScript.characterID == 1)
         {
             melaniaTitle.SetActive(false);
@@ -114,6 +109,9 @@ public class DialogueReader : MonoBehaviour
     {
         textUI.text = "";
         choicesPanel.SetActive(false);
+        dialogueBox.SetActive(false);
+        athenaTitle.SetActive(false);
+        melaniaTitle.SetActive(false);
         print("QuitGame");
         Application.Quit();
     }
