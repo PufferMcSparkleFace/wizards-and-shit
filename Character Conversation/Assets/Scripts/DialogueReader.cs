@@ -33,7 +33,6 @@ public class DialogueReader : MonoBehaviour
         {
             textUI.text = "";
             StopAllCoroutines();
-            melaniaTitle.SetActive(false);
             return;
         }
 
@@ -69,6 +68,7 @@ public class DialogueReader : MonoBehaviour
         if (lineScript.choices.Length > 0)
         {
             textUI.text = "";
+            melaniaTitle.SetActive(true);
 
             for (int i = 0; i < lineScript.choices.Length; i++)
             {
