@@ -32,7 +32,6 @@ public class DialogueReader : MonoBehaviour
         if (choicesPanel.activeInHierarchy)
         {
             textUI.text = "";
-            dialogueBox.SetActive(false);
             StopAllCoroutines();
             melaniaTitle.SetActive(false);
             return;
@@ -51,19 +50,25 @@ public class DialogueReader : MonoBehaviour
             return;
         }
 
-        if (lineScript.characterID == 0)
+        /*if (lineScript.characterID == 0)
         {
             dialogueBox.SetActive(true);
             melaniaTitle.SetActive(true);
             athenaTitle.SetActive(false);
             //textUI.color = Color.black;
-        }
+        }*/
         if (lineScript.characterID == 1)
         {
             melaniaTitle.SetActive(false);
             athenaTitle.SetActive(true);
             dialogueBox.SetActive(true);
             //textUI.color = Color.white;
+        }
+        else
+        {
+            dialogueBox.SetActive(true);
+            melaniaTitle.SetActive(true);
+            athenaTitle.SetActive(false);
         }
 
         if (lineScript.choices.Length > 0)
