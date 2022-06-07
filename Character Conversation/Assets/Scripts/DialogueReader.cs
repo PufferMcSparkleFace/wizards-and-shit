@@ -37,7 +37,7 @@ public class DialogueReader : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        /*if (Input.GetKeyDown(KeyCode.Q))
         {
             isTalking();
         }
@@ -55,7 +55,7 @@ public class DialogueReader : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             isAgreeing();
-        }
+        }*/
 
         if (!Input.GetKeyDown(KeyCode.Space))
         {
@@ -118,6 +118,10 @@ public class DialogueReader : MonoBehaviour
     {
         isTyping = true;
         textUI.text = "";
+        if (lineScript.callBack != "")
+        {
+            SelectCallBack(lineScript.callBack);
+        }
         foreach (char letter in sentence.ToCharArray())
         {
             textUI.text += letter;

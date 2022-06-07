@@ -1,7 +1,7 @@
 Start:First Choice
 0]Call off your troops!
 0]I am M-
-1]Melania of Epirus?
+1]Melania of Epirus?:isDismissive
 1]I know, child.
 1]All too well.
 1]Hermes has told me all about your little adventure.

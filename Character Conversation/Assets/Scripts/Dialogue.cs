@@ -130,6 +130,7 @@ public class Line
     public string dialogue;
     // if we have choices they go here.
     public Choice[] choices;
+    public string callBack;
 
     public Line(string lineInformation) // take the line information and split it into dialogue or choices.
     {
@@ -155,6 +156,18 @@ public class Line
         else
         {
             choices = new Choice[0]; // set emtpy choices if nothing there.
+        }
+
+        if (assetLine[1].Contains(":"))
+        {
+            string[] tempTarget = assetLine[1].Split(':');
+            dialogue = tempTarget[0].Replace("\r", "");
+            dialogue.Remove(0, 1);
+            callBack = tempTarget[1].Replace("\r", "");
+        }
+        else
+        {
+            callBack = "";
         }
     }
 }
