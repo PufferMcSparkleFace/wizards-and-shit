@@ -18,6 +18,7 @@ public class DialogueReader : MonoBehaviour
     public GameObject dialogueBox;
     public GameObject athenaTitle;
     public GameObject melaniaTitle;
+    public Animator anim;
 
     void Start()
     {
@@ -34,6 +35,26 @@ public class DialogueReader : MonoBehaviour
             textUI.text = "";
             StopAllCoroutines();
             return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            isTalking();
+        }
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            isAngry();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            isDismissive();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            isAgreeing();
         }
 
         if (!Input.GetKeyDown(KeyCode.Space))
@@ -138,5 +159,37 @@ public class DialogueReader : MonoBehaviour
     public void TestFunction()
     {
         print("success");
+    }
+
+    public void isTalking()
+    {
+        anim.SetBool("isTalking", true);
+        anim.SetBool("isAngry", false);
+        anim.SetBool("isDismissive", false);
+        anim.SetBool("isAgreeing", false);
+    }
+
+    public void isAngry()
+    {
+        anim.SetBool("isTalking", false);
+        anim.SetBool("isAngry", true);
+        anim.SetBool("isDismissive", false);
+        anim.SetBool("isAgreeing", false);
+    }
+
+    public void isDismissive()
+    {
+        anim.SetBool("isTalking", false);
+        anim.SetBool("isAngry", false);
+        anim.SetBool("isDismissive", true);
+        anim.SetBool("isAgreeing", false);
+    }
+
+    public void isAgreeing()
+    {
+        anim.SetBool("isTalking", false);
+        anim.SetBool("isAngry", false);
+        anim.SetBool("isDismissive", false);
+        anim.SetBool("isAgreeing", true);
     }
 }
